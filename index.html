@@ -3,15 +3,177 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PaperEnvoy</title>
-<style>
-  body { font: 18px/1.5 system-ui, sans-serif; max-width: 36rem; margin: 20vh auto; padding: 0 1rem; color: #222; }
-  h1 { margin-bottom: .25em; }
-  p { color: #555; }
-</style>
+<title>PaperEnvoy — Read the web on paper</title>
+<meta name="description" content="Share any article from your phone and PaperEnvoy sends a clean, distraction-free copy to your reMarkable, ready to read and mark up.">
+<meta property="og:title" content="PaperEnvoy — Read the web on paper">
+<meta property="og:description" content="Send any article from your iPhone or Android phone to your reMarkable in two taps.">
+<meta property="og:image" content="media/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F6F3EE">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400&family=Instrument+Sans:wght@400..700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>PaperEnvoy</h1>
-<p>Send web articles to your reMarkable. Coming soon.</p>
+<header class="nav wrap">
+  <a class="brand" href="./"><img src="icon.png" alt="" width="32" height="32">PaperEnvoy</a>
+  <nav>
+    <a href="#walkthrough">Walkthrough</a>
+    <a href="#how">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="kicker">For reMarkable owners</p>
+      <h1>Read the web <em>on paper.</em></h1>
+      <p class="lede">Share any article from your phone and PaperEnvoy sends a clean, distraction-free copy to your reMarkable, ready to read and mark up.</p>
+      <div class="stores">
+        <a class="store" href="#get" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg><span><small>Coming soon to the</small>App Store</span></a>
+        <a class="store" href="#get" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1zm11.3 11.3 2.4 2.4-11 6.3 8.6-8.7zm3.8-3.4 2.5 1.4c.8.5.8 1.3 0 1.8l-2.5 1.4-2.7-2.3 2.7-2.3zM6.3 2.2l11 6.3-2.4 2.4-8.6-8.7z"/></svg><span><small>Coming soon to</small>Google Play</span></a>
+      </div>
+      <p class="fine">Your first 25 articles are free. Not affiliated with reMarkable AS.</p>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="tablet">
+        <div class="paper">
+          <h3>How to Do Great Work</h3>
+          <p class="meta">paulgraham.com</p>
+          <p>The first step is to decide what to work on. The work you choose needs to have three qualities: it has to be something you have a natural aptitude for, that you have a <span class="ul">deep interest in</span>, and that offers scope to do great work.</p>
+          <p>In practice you don't have to worry much about the third criterion.</p>
+          <span class="note">yes — this!</span>
+        </div>
+      </div>
+      <div class="badge"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg></div>
+    </div>
+  </section>
+
+  <section id="walkthrough" class="walkthrough wrap">
+    <div class="section-head">
+      <p class="kicker">Walkthrough · 46 seconds</p>
+      <h2>From browser to tablet in two taps</h2>
+    </div>
+    <figure class="video">
+      <video controls playsinline preload="metadata" poster="media/poster.jpg">
+        <source src="media/walkthrough.mp4" type="video/mp4">
+        Your browser can't play this video. <a href="media/walkthrough.mp4">Download it</a> instead.
+      </video>
+      <figcaption>Link once, share an article, and it's waiting in a PaperEnvoy folder on your reMarkable.</figcaption>
+    </figure>
+  </section>
+
+  <section id="how" class="how wrap">
+    <div class="section-head">
+      <p class="kicker">How it works</p>
+      <h2>Three steps, and only the first one is setup</h2>
+    </div>
+    <ol class="steps">
+      <li>
+        <span class="num">1</span>
+        <h3>Link your reMarkable</h3>
+        <p>Sign in at my.remarkable.com, get an 8-letter code, and type it into PaperEnvoy. Your reMarkable password never touches the app.</p>
+      </li>
+      <li>
+        <span class="num">2</span>
+        <h3>Share an article</h3>
+        <p>In Safari, Chrome or any app that shares links, tap Share and choose PaperEnvoy. Or paste a link in the app.</p>
+      </li>
+      <li>
+        <span class="num">3</span>
+        <h3>Read it on paper</h3>
+        <p>After your tablet's next sync, the article is in a PaperEnvoy folder at the top of My files. Underline it, scribble in the margins.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="features wrap">
+    <div class="feature">
+      <h3>Just the article</h3>
+      <p>Ads, menus, pop-ups and cookie banners are stripped away. What's left is the text and its images, typeset for e-ink.</p>
+    </div>
+    <div class="feature">
+      <h3>EPUB or PDF</h3>
+      <p>EPUB reflows to any text size, best for reading. PDF gives fixed pages sized to the screen, best for writing in the margins.</p>
+    </div>
+    <div class="feature">
+      <h3>Its own folder</h3>
+      <p>Everything lands in a PaperEnvoy folder, so your notebooks stay tidy.</p>
+    </div>
+    <div class="feature">
+      <h3>Share before you link</h3>
+      <p>Shared something before setting up? It waits in the queue and sends the moment you link.</p>
+    </div>
+    <div class="feature">
+      <h3>Swipe to tidy</h3>
+      <p>Swipe an article away in the app and it moves to the reMarkable trash, where you can still restore it.</p>
+    </div>
+    <div class="feature">
+      <h3>No account, no tracking</h3>
+      <p>There's no PaperEnvoy account and no analytics. The app talks to reMarkable's cloud and nothing else of ours.</p>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing wrap">
+    <div class="price-card">
+      <p class="kicker">Pricing</p>
+      <h2>Try it on 25 articles. Then buy it once.</h2>
+      <p>Your first 25 articles are free, with every feature. After that, a single in-app purchase unlocks PaperEnvoy for good. No subscription, and you can restore it with the same Apple ID or Google account.</p>
+      <ul>
+        <li>25 free articles</li>
+        <li>One-time unlock</li>
+        <li>No subscription</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="faq" class="faq wrap">
+    <div class="section-head">
+      <p class="kicker">Questions</p>
+      <h2>Good to know</h2>
+    </div>
+    <details>
+      <summary>Do I need a reMarkable Connect subscription?</summary>
+      <p>No. PaperEnvoy uses reMarkable's cloud sync, which works on the free tier.</p>
+    </details>
+    <details>
+      <summary>Which tablets does it work with?</summary>
+      <p>Any reMarkable that syncs with reMarkable's cloud, including reMarkable 2 and Paper Pro.</p>
+    </details>
+    <details>
+      <summary>How long until an article shows up?</summary>
+      <p>PaperEnvoy uploads it within seconds. It appears on the tablet the next time the tablet syncs, which happens on its own while it's awake and online.</p>
+    </details>
+    <details>
+      <summary>What about paywalled pages?</summary>
+      <p>PaperEnvoy reads the page the way a browser does without your sign-in, so it can only send what's publicly visible. Pages that load their text with JavaScript may come through short.</p>
+    </details>
+    <details>
+      <summary>Is PaperEnvoy made by reMarkable?</summary>
+      <p>No. PaperEnvoy is an independent app and is not affiliated with reMarkable AS. It uses the same upload endpoint as reMarkable's own “Read on reMarkable” browser extension.</p>
+    </details>
+    <details>
+      <summary>What happens to my data?</summary>
+      <p>Articles are fetched and converted on your phone and uploaded to your own reMarkable cloud. Read the <a href="privacy.html">privacy policy</a> for the details.</p>
+    </details>
+  </section>
+
+  <section id="get" class="cta wrap">
+    <h2>Your reading, on paper.</h2>
+    <p>PaperEnvoy is coming soon to the App Store and Google Play.</p>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <span>© 2026 PaperEnvoy</span>
+  <a href="privacy.html">Privacy</a>
+  <span>reMarkable is a trademark of reMarkable AS. PaperEnvoy is not affiliated with reMarkable AS.</span>
+</footer>
 </body>
 </html>

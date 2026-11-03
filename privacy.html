@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — PaperEnvoy</title>
+<meta name="description" content="How PaperEnvoy handles your data.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav wrap">
+  <a class="brand" href="./"><img src="icon.png" alt="" width="32" height="32">PaperEnvoy</a>
+</header>
+<main class="doc wrap">
+  <h1>Privacy</h1>
+  <p>Last updated November 2, 2026</p>
+
+  <h2>The short version</h2>
+  <p>PaperEnvoy has no servers of its own, no accounts and no analytics. It runs on your phone and talks to the websites you share and to reMarkable's cloud.</p>
+
+  <h2>What the app handles</h2>
+  <ul>
+    <li><strong>Links you send.</strong> PaperEnvoy fetches each page on your phone, converts it to an EPUB or PDF on your phone, and uploads the file to your reMarkable cloud. The list of articles you've sent is stored only on your phone.</li>
+    <li><strong>Your reMarkable link.</strong> Linking exchanges a one-time code for a device token, which is kept in your phone's Keychain (iOS) or Keystore (Android). PaperEnvoy never sees your reMarkable password. You can unlink in Settings, and revoke the device at my.remarkable.com.</li>
+    <li><strong>Purchases.</strong> The one-time unlock is handled by the App Store or Google Play. PaperEnvoy only learns whether the unlock was bought.</li>
+  </ul>
+
+  <h2>Who else is involved</h2>
+  <p>The websites you share see an ordinary request for their page. reMarkable AS stores the files you send in your reMarkable account, under its own privacy policy. Apple or Google process the unlock purchase under theirs.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy: open an issue on <a href="https://github.com/alexhwu/paperenvoy/issues">GitHub</a>.</p>
+</main>
+<footer class="foot wrap">
+  <span>© 2026 PaperEnvoy</span>
+  <a href="./">Home</a>
+  <span>Not affiliated with reMarkable AS.</span>
+</footer>
+</body>
+</html>
